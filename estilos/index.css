@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 1%;
+}
+
+.header {
+    /* background-color: rgba(182, 255, 148, 0.705); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor-logo {
+   text-align: left;
+}
+
+.logo {
+    height: 25vh;
+    
+}
+
+.navegacion {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+
+}
+
+li {
+    padding: 1% 3% 1% 3%;
+    border: solid 3px white;
+    height:min-content;
+    border-radius: 25px;
+    margin: 1%;
+    cursor: pointer;
+    font-family: caviar;
+    font-size: 1vw;
+    color: white;
+    background-color: rgb(210, 102, 13);
+    transition: 250ms ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+
+/*Fuentes*/
+@font-face {
+    font-family: caviar;
+    src: url("../fuentes/caviar_dreams/CaviarDreams_Bold.ttf");
+}
+@font-face {
+    font-family: nexa;
+    src: url("../fuentes/nexa/Nexa-Heavy.ttf");
+}
+@font-face {
+    font-family: nexa-light;
+    src: url("../fuentes/nexa/Nexa-ExtraLight.ttf");
+}
+/*Fin Fuentes*/
+
+.imagen {
+    width: 40vw;
+    transition: 250ms ease-in-out;
+    background-size:contain;
+    border-radius: 500px 0 500px 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.forma {
+    width: 40vw;
+    height: 460px;
+    background-color: aqua;
+    border-radius: 0 100% 0 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.forma2 {
+    width: 40vw;
+    height: 460px;
+    background-color: aqua;
+    border-radius: 100% 0 100% 0;
+    position: relative;
+    z-index: 1;
+
+}
+
+.texto {
+    z-index: 2;
+    position: absolute;
+    padding: 0 3% 0 3%;
+    display: none;
+}
+
+#primero{
+    display: block;
+}
+
+.titulo {
+    font-family: nexa;
+    font-size: 2.5vw;
+    color: rgb(116, 57, 255);
+    padding: 0 0 20px 0;
+}
+
+.descripcion{
+    color: rgb(124, 79, 230);
+    padding: 0 15% 0 0;
+    text-align: justify;
+    font-family: nexa-light;
+    font-weight: 800;
+    font-size: 2vh;
+
+}
+
+.btn {
+    padding: 1% 3% 1% 3%;
+    border: solid 3px white;
+    height:min-content;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: caviar;
+    font-size: 1vw;
+    color: white;
+    background-color: rgb(210, 102, 13);
+    transition: 250ms ease-in-out;
+    margin: 5% 0 0 30%;
+    
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+.seccion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+    place-items: center;
+    gap: 10px;
+    font-family: caviar;
+}
