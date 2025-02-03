@@ -7,6 +7,10 @@ body {
     /* background-color: rgba(182, 255, 148, 0.705); */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: fixed;
+    width: 95%;
+    top: 0;
+    z-index: 100;
 }
 
 .contenedor-logo {
@@ -25,7 +29,7 @@ body {
 
 }
 
-li {
+.selector {
     padding: 1% 3% 1% 3%;
     border: solid 3px white;
     height:min-content;
@@ -39,7 +43,7 @@ li {
     transition: 250ms ease-in-out;
 }
 
-li:hover {
+.selector:hover {
     transform: scale(1.2);
 }
 
@@ -87,6 +91,25 @@ li:hover {
 
 }
 
+.forma3 {
+    width: 40vw;
+    height: 460px;
+    background-color: aqua;
+    border-radius: 0 100% 0 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.forma4 {
+    width: 40vw;
+    height: 460px;
+    background-color: aqua;
+    border-radius: 100% 0 100% 0;
+    position: relative;
+    z-index: 1;
+
+}
+
 .texto {
     z-index: 2;
     position: absolute;
@@ -102,7 +125,7 @@ li:hover {
     font-family: nexa;
     font-size: 2.5vw;
     color: rgb(116, 57, 255);
-    padding: 0 0 20px 0;
+    /* padding: 0 0 20px 0; */
 }
 
 .descripcion{
@@ -145,4 +168,167 @@ li:hover {
     place-items: center;
     gap: 10px;
     font-family: caviar;
+    max-height: 100vh;
+    padding: 15% 0 15% 0;
+}
+
+.seccion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+    place-items: center;
+    gap: 10px;
+    font-family: caviar;
+    max-height: 100vh;
+    padding: 5% 0 5% 0;
+}
+
+#seccion3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+    place-items: center;
+    gap: 10px;
+    font-family: caviar;
+    max-height: 100vh;
+    padding: 0 0 5% 0;
+    position: relative;
+}
+
+.seccion3 {
+    margin: 3%;
+    place-items: center;
+    font-family: caviar;
+    max-height: 100vh;
+    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mapa {
+    position: absolute;
+    z-index: 2;
+    transform: translateX(100px);
+    border-radius: 25px;
+    height: 460px;
+    width: 30vw;
+    border: solid 6px white;
+}
+
+.sedes {
+    color: white;
+    background-color:rgba(116, 57, 255, 0.515);
+    border-radius: 25px;
+    font-family: caviar;
+    font-size: 1.4vh;
+    transition: 250ms ease-in-out;
+    margin: 0 0 1% 0;
+    border: solid 6px white;
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    
+}
+
+.sedes:hover {
+    transform: scale(1.1);
+    background-color:rgba(116, 57, 255);
+}
+
+.icono-sede {
+    background-image: url("/assets/mascota.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 0 10px;
+    color: white;
+    filter: invert(1);
+    
+}
+
+.tarjeta {
+    background-color: rgba(255, 192, 109, 0.9);
+    width: 300px;
+    height: 280px;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 0 15px 0;
+    border: solid 4px white;
+}
+
+.titulo-servicio {
+    font-family: nexa;
+    font-size: 1.8vh;
+    color: rgb(124, 79, 230);
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 0 10px;
+}
+
+.descripcion-servicio {
+    color: rgb(124, 79, 230);
+    font-size: 1.3vh;
+    text-align: justify;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+
+
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    text-align: left;
+}
+
+.logo-servicio {
+    background-image: url("/assets/perro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45px;
+    border-radius: 100%;
+    margin: 0 0 10px 0;
+    
+    
+}
+
+.contenedor-tarjetas {
+    /* background-color: rgba(137, 43, 226, 0.187); */
+    height: auto;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    transform: translateY(70px);
+}
+
+
+.viñeta {
+    background-image: url("/assets/check.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+
+}
+
+.label {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }

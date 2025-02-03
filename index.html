@@ -15,11 +15,11 @@
         </div>
         <nav class="navegacion">
             
-                <li>Inicio</li>
-                <li>Sedes</li>
-                <li>Servicios</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
+                <li class="selector">Inicio</li>
+                <li class="selector">Sedes</li>
+                <li class="selector">Servicios</li>
+                <li class="selector">Nosotros</li>
+                <li class="selector">Contacto</li>
             
         </nav>
     </header>
@@ -115,6 +115,300 @@
 
         </div>
         
+    </section>
+
+
+    <section class="seccion2">
+        
+        <div>
+            <div class="texto" id="primero">
+                <div class="titulo">
+                    Encuentra tu sede mas cercana
+                </div>
+    
+                <menu>
+                    <li class="sedes" onclick="mostrar_mapa(1)">
+                        <div class="icono-sede"></div>
+                        <div>
+                            <label class="nombre-sede">Sede Poblado</label>
+                            <br>
+                            <label class="titulo-direccion">Direccion: &nbsp;</label>
+                            <label class="Direccion">Cl 10 #43a-15, El Poblado, Medellin, Antioquia</label>
+                            <br>
+                            <label class="titulo-telefono">Telefono:&nbsp;&nbsp;&nbsp;</label>
+                            <label class="Telefono">+57 328 772 222</label>
+                        </div>
+                    </li>
+
+                    <li class="sedes" onclick="mostrar_mapa(2)">
+                        <div class="icono-sede"></div>
+                        <div class="info-sedes">
+                            <label class="nombre-sede">Sede Laureles</label>
+                            <br>
+                            <label class="titulo-direccion">Direccion: &nbsp;</label>
+                            <label class="Direccion">Circ. 4 #73-124, Laureles, Laureles, Medellín, Antioquia</label>
+                            <br>
+                            <label class="titulo-telefono">Telefono:&nbsp;&nbsp;&nbsp;</label>
+                            <label class="Telefono">+57 328 772 333</label>
+                        </div>
+                    </li>
+
+                    <li class="sedes" onclick="mostrar_mapa(3)">
+                        <div class="icono-sede"></div>
+                        <div class="info-sedes">
+                            <label class="nombre-sede">Sede CC El Tesoro</label>
+                            <br>
+                            <label class="titulo-direccion">Direccion: &nbsp;</label>
+                            <label class="Direccion">Cra. 25a #1A sur 45 Local 3027, El Poblado, Medellín, Antioquia</label>
+                            <br>
+                            <label class="titulo-telefono">Telefono:&nbsp;&nbsp;&nbsp;</label>
+                            <label class="Telefono">+57 382 772 222</label>
+                        </div>
+                    </li>
+
+                    <li class="sedes" onclick="mostrar_mapa(4)">
+                        <div class="icono-sede"></div>
+                        <div class="info-sedes">
+                            <label class="nombre-sede">Sede CC Viva Envigado</label>
+                            <br>
+                            <label class="titulo-direccion">Direccion: &nbsp;</label>
+                            <label class="Direccion">Carrera 48 # 32B sur 139 LOCAL 366, Av. Las Vegas, Envigado, Antioquia</label>
+                            <br>
+                            <label class="titulo-telefono">Telefono:&nbsp;&nbsp;&nbsp;</label>
+                            <label class="Telefono">+57 397 772 222</label>
+                        </div>
+                    </li>
+
+    
+                        
+                    
+                </menu>
+
+            </div>
+
+
+
+            <div class="forma4"></div>
+            
+
+        </div>
+
+        <div class="contenedor-der">
+            <!-- <img class="imagen" id="imagen" src="assets/1.jpg" alt="Imagen dinámica"> -->
+            <iframe id="map" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.401511539481!2d-75.57320178820675!3d6.210657293751321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44282ba41a1223%3A0x441b86841cf659a!2sCl%2010%20%2343a-15%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1736996008870!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="forma3"></div>
+        </div>
+
+        </div>
+        
+    </section>
+
+    <section class="seccion3">
+        <div class="titulo">Conoce nuestros servicios</div>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <div class="logo-servicio" id="1"></div>
+                <div class="titulo-servicio">Servicios Generales</div>
+                <div class="descripcion-servicio">
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Consulta General – Exámenes de rutina y diagnóstico de enfermedades.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Vacunación – Aplicación de vacunas esenciales</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Desparasitación – Interna (parásitos intestinales) y externa (pulgas, garrapatas).</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Expediente Médico – Historial de salud del paciente.</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="2"></div>
+                <div class="titulo-servicio">Diagnostico y Prevencion</div>
+                <div class="descripcion-servicio">
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Exámenes de Laboratorio – Hemogramas, bioquímica sanguínea, pruebas virales.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Radiografías y Ecografías – Evaluacion de órganos y huesos.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Chequeos Geriátricos – Control de enfermedades en mascotas mayores.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Electrocardiogramas (ECG) – Para evaluar el corazón.</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="3"></div>
+                <div class="titulo-servicio">Cirugias y Procedimientos</div>
+                <div class="descripcion-servicio">
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Esterilización / Castración – Control poblacional y beneficios de salud.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Cirugías Generales – Retiro de tumores, reparación de fracturas, cesáreas,</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Cirugía Laparoscópica – Procedimientos menos invasivos.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Odontología Veterinaria – Limpieza dental, extracción de piezas dañadas.</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="4"></div>
+                <div class="titulo-servicio">Especialidades</div>
+                <div class="descripcion-servicio">
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Dermatología – Tratamiento de alergias, infecciones de piel y oídos.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Oftalmología – Diagnóstico y tratamiento de problemas oculares.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Ortopedia – Tratamiento de fracturas, displasia de cadera, problemas articulares.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Nutrición y Dietética – Planes de alimentación personalizados.</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="5"></div>
+                <div class="titulo-servicio">Emergencia y Hospitalización</div>
+                <div class="descripcion-servicio">
+                 
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Urgencias 24/7 – Atención inmediata en casos críticos.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Hospitalización – Cuidados intensivos y monitoreo de pacientes graves.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Terapia de Fluidoterapia – Hidratación y tratamiento de enfermedades.</div>
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="6"></div>
+                <div class="titulo-servicio">Estetica y Bienestar</div>
+                <div class="descripcion-servicio">
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Baño y Peluquería Canina/Felina – Corte de pelo, limpieza de orejas y uñas.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Spa para Mascotas – Hidroterapia, masajes relajantes.</div>
+                    </label>
+
+                    
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="7"></div>
+                <div class="titulo-servicio">Servicios a Domicilio</div>
+                <div class="descripcion-servicio">
+        
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Consultas en Casa – Ideal para mascotas nerviosas o dueños con movilidad reducida.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Vacunación y Desparasitación a Domicilio – Aplicación sin necesidad de traslado.</div>
+                    </label>
+
+                
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="logo-servicio" id="8"></div>
+                <div class="titulo-servicio">Servicios Especiales</div>
+                <div class="descripcion-servicio">
+                    
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Certificados de Salud y Viaje – Documentación para viajes nacionales e internacionales.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Eutanasia Humanitaria – Procedimiento compasivo en casos terminales.</div>
+                    </label>
+
+                    <label class="label">
+                        <div class="viñeta"></div>
+                        <div class="item">Cremación o Entierro de Mascotas – Despedida digna.</div>
+                    </label>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="seccion3">
+            <div>
+                <div class="forma"></div>
+            </div>
+    
+            <div>
+                <div class="forma2"></div>
+            </div>
+        </div>
+    
+    
+        
+    
     </section>
     
 </body>
