@@ -45,6 +45,7 @@ body {
 
 .selector:hover {
     transform: scale(1.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -168,7 +169,7 @@ body {
     place-items: center;
     gap: 10px;
     font-family: caviar;
-    max-height: 100vh;
+    height: 100%;
     padding: 15% 0 15% 0;
 }
 
@@ -179,7 +180,7 @@ body {
     place-items: center;
     gap: 10px;
     font-family: caviar;
-    max-height: 100vh;
+    height: 100%;
     padding: 5% 0 5% 0;
 }
 
@@ -204,6 +205,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.seccion4 {
+    margin: 3%;
+    place-items: center;
+    font-family: caviar;
+    max-height: 100vh;
+    padding: 5% 0 5% 0;
 }
 
 
@@ -235,6 +244,7 @@ body {
 .sedes:hover {
     transform: scale(1.1);
     background-color:rgba(116, 57, 255);
+    cursor: pointer;
 }
 
 .icono-sede {
@@ -332,3 +342,227 @@ body {
     align-items: center;
     padding: 5px;
 }
+
+
+
+
+/*ensayo de galeria*/
+
+.galeria {
+    max-width: 40%;
+    height: 460px;
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+
+}
+
+.item-galeria {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 100%;
+    transition: 350ms ease-in-out;
+}
+
+.item-galeria:hover {
+    width: 600px;
+    cursor: pointer;
+}
+
+#seccion5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.vista {
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    width: 39%;
+    background-color: rgba(255, 192, 109, 0.698);
+    border-radius: 25px;
+    border: solid 4px white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    display: none;
+}
+
+#datos-personales {
+    display: inline-block;
+    align-content: center;
+    
+}
+
+.titulo-perfil {
+    font-family: nexa;
+    font-size: 2.1vh;
+    color: rgb(86, 54, 161);
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 0 2% 0 2%;
+}
+
+/* #foto-perfil {
+    background-image: url("/assets/perfil1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    border-radius: 25px;
+    background-color: blue;
+} */
+
+.foto-perfil {
+    max-height: 170px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#contenedor-perfil {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+h3 {
+    font-family: nexa;
+    color: rgb(86, 54, 161);
+    border-radius: 25px;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 0 3% 0 3%;
+
+}
+
+p {
+    font-size: 1.5vh;
+    margin: 0;
+    
+}
+
+ul {
+    font-size: 1.5vh;
+}
+
+.info {
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 0 2% 0 2%;
+    margin: 0 5% 0 0;
+    /* color: rgb(86, 54, 161); */
+}
+
+
+#perfil-profesional {
+    color: rgb(86, 54, 161);
+}
+
+.agente {
+    border-radius: 100%;
+    max-width: 450px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: solid 5px white;
+    transform: scaleX(-1);
+}
+
+.contenedor-contacto {
+    z-index: 2;
+    background-color: rgba(255, 192, 109, 0.698);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 3%;
+    place-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+h2 {
+    color: rgb(86, 54, 161);
+    font-family: nexa;
+    font-size: 1.6vw;
+    /* background-color: white; */
+    border-radius: 25px;
+    padding: 0 3% 0 3%;
+    text-align: center;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+
+.contenedor-agente {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* .numero {
+    background-color: white;
+    border-radius: 25px;
+} */
+
+
+
+.dato {
+    border-radius: 25px;
+    /* background-color: white; */
+    /* padding: 0 3% 0 3%; */
+    font-family: nexa;
+    font-size: 1.3vw;
+    color: rgb(86, 54, 161);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    align-items: center;
+    align-content: center;
+
+}
+
+.seccion6 {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 10% 5%;
+    text-align: center;
+}
+
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conteiner2 {
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner3 {
+    position: absolute;
+    z-index: 2;
+    
+}
+
+
+
+.conteiner4 {
+    background-color: white;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 3% 0 0;
+}
+
+
+
+
+
+
+

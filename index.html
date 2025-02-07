@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patitas Felices Clinica Veterinaria</title>
     <link rel="stylesheet" href="estilos/index.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -14,18 +16,18 @@
             <img class="logo" src="assets/logo.png" alt="" srcset="">
         </div>
         <nav class="navegacion">
-            
-                <li class="selector">Inicio</li>
-                <li class="selector">Sedes</li>
-                <li class="selector">Servicios</li>
-                <li class="selector">Nosotros</li>
-                <li class="selector">Contacto</li>
-            
+
+            <li class="selector" id="boton-inicio">Inicio</li>
+            <li class="selector" id="boton-sedes">Sedes</li>
+            <li class="selector" id="boton-servicios">Servicios</li>
+            <li class="selector" id="boton-nosotros">Nosotros</li>
+            <li class="selector" id="boton-contacto">Contacto</li>
+
         </nav>
     </header>
 
 
-    <section class="seccion1">
+    <section class="seccion1" id="seccion-inicio">
         <div>
             <img class="imagen" id="imagen" src="assets/1.jpg" alt="Imagen dinámica">
             <div class="forma"></div>
@@ -35,17 +37,18 @@
                 <div class="titulo">
                     Tu mejor amigo en manos expertas
                 </div>
-    
+
                 <div class="descripcion">
-                   
-                        En nuestra clínica veterinaria, nos dedicamos al bienestar y la salud de tus mascotas con un enfoque profesional y
-                        lleno de cariño. 
-                        <br><br>
-                        Contamos con un equipo de veterinarios altamente capacitados y tecnología de vanguardia para
-                        ofrecer atención médica preventiva, diagnóstico, tratamientos especializados y cirugía
-                    
+
+                    En nuestra clínica veterinaria, nos dedicamos al bienestar y la salud de tus mascotas con un enfoque
+                    profesional y
+                    lleno de cariño.
+                    <br><br>
+                    Contamos con un equipo de veterinarios altamente capacitados y tecnología de vanguardia para
+                    ofrecer atención médica preventiva, diagnóstico, tratamientos especializados y cirugía
+
                 </div>
-                <button class="btn">
+                <button class="btn" id="boton-nosotros" onclick="desplazamientoBtn(1)">
                     Conocelos
                 </button>
             </div>
@@ -54,16 +57,17 @@
                 <div class="titulo">
                     Servicios a la medida de cada necesidad
                 </div>
-    
+
                 <div class="descripcion">
-                
-                    Ofrecemos una amplia gama de servicios para garantizar el bienestar de tu mascota. Contamos con consulta
+
+                    Ofrecemos una amplia gama de servicios para garantizar el bienestar de tu mascota. Contamos con
+                    consulta
                     médica general, vacunación, desparasitación, cirugía, hospitalización, y diagnóstico por imágenes.
                     <br><br>
                     Nuestra mision es trabajar con dedicación y amor para ofrecer una atención integral y personalizada.
-                
+
                 </div>
-                <button class="btn">
+                <button class="btn" id="boton-servicios" onclick="desplazamientoBtn(2)">
                     Servicios
                 </button>
             </div>
@@ -72,17 +76,19 @@
                 <div class="titulo">
                     Cobertura 24/7 en urgencias medicas
                 </div>
-    
+
                 <div class="descripcion">
-                
-                    Estamos disponibles las 24 horas del día, los 7 días de la semana, porque sabemos que la salud de tu mascota no tiene
+
+                    Estamos disponibles las 24 horas del día, los 7 días de la semana, porque sabemos que la salud de tu
+                    mascota no tiene
                     horario.
                     <br><br>
-                    Nuestro equipo de profesionales está siempre listo para brindarle la mejor atención en cualquier momento. Despreocupate del reloj, 
-                    ven siempre que lo necesites. 
-                
+                    Nuestro equipo de profesionales está siempre listo para brindarle la mejor atención en cualquier
+                    momento. Despreocupate del reloj,
+                    ven siempre que lo necesites.
+
                 </div>
-                <button class="btn">
+                <button class="btn" id="boton-sedes" onclick="desplazamientoBtn(3)">
                     Sedes
                 </button>
             </div>
@@ -91,17 +97,19 @@
                 <div class="titulo">
                     Atencion al cliente preferencial siempre
                 </div>
-    
+
                 <div class="descripcion">
-                
-                    Nos comprometemos a brindar una atención cálida, profesional y personalizada. Sabemos lo importante que
-                    es tu mascota para ti, por eso nuestro equipo está siempre dispuesto a resolver tus dudas y ofrecerte el
+
+                    Nos comprometemos a brindar una atención cálida, profesional y personalizada. Sabemos lo importante
+                    que
+                    es tu mascota para ti, por eso nuestro equipo está siempre dispuesto a resolver tus dudas y
+                    ofrecerte el
                     mejor servicio con amabilidad y empatía.
                     <br><br>
                     ¡Tu confianza es nuestra prioridad y estamos aquí para ayudarte!
-                
+
                 </div>
-                <button class="btn">
+                <button class="btn" id="boton-contacto" onclick="desplazamientoBtn(4)">
                     Contacto
                 </button>
             </div>
@@ -109,23 +117,22 @@
 
 
             <div class="forma2"></div>
-            
+
 
         </div>
 
         </div>
-        
+
     </section>
 
+    <section class="seccion2" id="seccion-sedes">
 
-    <section class="seccion2">
-        
         <div>
             <div class="texto" id="primero">
                 <div class="titulo">
                     Encuentra tu sede mas cercana
                 </div>
-    
+
                 <menu>
                     <li class="sedes" onclick="mostrar_mapa(1)">
                         <div class="icono-sede"></div>
@@ -159,7 +166,8 @@
                             <label class="nombre-sede">Sede CC El Tesoro</label>
                             <br>
                             <label class="titulo-direccion">Direccion: &nbsp;</label>
-                            <label class="Direccion">Cra. 25a #1A sur 45 Local 3027, El Poblado, Medellín, Antioquia</label>
+                            <label class="Direccion">Cra. 25a #1A sur 45 Local 3027, El Poblado, Medellín,
+                                Antioquia</label>
                             <br>
                             <label class="titulo-telefono">Telefono:&nbsp;&nbsp;&nbsp;</label>
                             <label class="Telefono">+57 382 772 222</label>
@@ -172,16 +180,17 @@
                             <label class="nombre-sede">Sede CC Viva Envigado</label>
                             <br>
                             <label class="titulo-direccion">Direccion: &nbsp;</label>
-                            <label class="Direccion">Carrera 48 # 32B sur 139 LOCAL 366, Av. Las Vegas, Envigado, Antioquia</label>
+                            <label class="Direccion">Carrera 48 # 32B sur 139 LOCAL 366, Av. Las Vegas, Envigado,
+                                Antioquia</label>
                             <br>
                             <label class="titulo-telefono">Telefono:&nbsp;&nbsp;&nbsp;</label>
                             <label class="Telefono">+57 397 772 222</label>
                         </div>
                     </li>
 
-    
-                        
-                    
+
+
+
                 </menu>
 
             </div>
@@ -189,21 +198,23 @@
 
 
             <div class="forma4"></div>
-            
+
 
         </div>
 
         <div class="contenedor-der">
             <!-- <img class="imagen" id="imagen" src="assets/1.jpg" alt="Imagen dinámica"> -->
-            <iframe id="map" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.401511539481!2d-75.57320178820675!3d6.210657293751321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44282ba41a1223%3A0x441b86841cf659a!2sCl%2010%20%2343a-15%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1736996008870!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="map" class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.401511539481!2d-75.57320178820675!3d6.210657293751321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44282ba41a1223%3A0x441b86841cf659a!2sCl%2010%20%2343a-15%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1736996008870!5m2!1ses!2sco"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="forma3"></div>
         </div>
 
         </div>
-        
+
     </section>
 
-    <section class="seccion3">
+    <section class="seccion3" id="seccion-servicios">
         <div class="titulo">Conoce nuestros servicios</div>
         <div class="contenedor-tarjetas">
             <div class="tarjeta">
@@ -222,7 +233,8 @@
 
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Desparasitación – Interna (parásitos intestinales) y externa (pulgas, garrapatas).</div>
+                        <div class="item">Desparasitación – Interna (parásitos intestinales) y externa (pulgas,
+                            garrapatas).</div>
                     </label>
 
                     <label class="label">
@@ -238,7 +250,8 @@
                 <div class="descripcion-servicio">
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Exámenes de Laboratorio – Hemogramas, bioquímica sanguínea, pruebas virales.</div>
+                        <div class="item">Exámenes de Laboratorio – Hemogramas, bioquímica sanguínea, pruebas virales.
+                        </div>
                     </label>
 
                     <label class="label">
@@ -269,7 +282,8 @@
 
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Cirugías Generales – Retiro de tumores, reparación de fracturas, cesáreas,</div>
+                        <div class="item">Cirugías Generales – Retiro de tumores, reparación de fracturas, cesáreas,
+                        </div>
                     </label>
 
                     <label class="label">
@@ -301,7 +315,8 @@
 
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Ortopedia – Tratamiento de fracturas, displasia de cadera, problemas articulares.</div>
+                        <div class="item">Ortopedia – Tratamiento de fracturas, displasia de cadera, problemas
+                            articulares.</div>
                     </label>
 
                     <label class="label">
@@ -315,7 +330,7 @@
                 <div class="logo-servicio" id="5"></div>
                 <div class="titulo-servicio">Emergencia y Hospitalización</div>
                 <div class="descripcion-servicio">
-                 
+
                     <label class="label">
                         <div class="viñeta"></div>
                         <div class="item">Urgencias 24/7 – Atención inmediata en casos críticos.</div>
@@ -341,7 +356,8 @@
 
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Baño y Peluquería Canina/Felina – Corte de pelo, limpieza de orejas y uñas.</div>
+                        <div class="item">Baño y Peluquería Canina/Felina – Corte de pelo, limpieza de orejas y uñas.
+                        </div>
                     </label>
 
                     <label class="label">
@@ -349,7 +365,7 @@
                         <div class="item">Spa para Mascotas – Hidroterapia, masajes relajantes.</div>
                     </label>
 
-                    
+
                 </div>
             </div>
 
@@ -357,18 +373,20 @@
                 <div class="logo-servicio" id="7"></div>
                 <div class="titulo-servicio">Servicios a Domicilio</div>
                 <div class="descripcion-servicio">
-        
+
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Consultas en Casa – Ideal para mascotas nerviosas o dueños con movilidad reducida.</div>
+                        <div class="item">Consultas en Casa – Ideal para mascotas nerviosas o dueños con movilidad
+                            reducida.</div>
                     </label>
 
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Vacunación y Desparasitación a Domicilio – Aplicación sin necesidad de traslado.</div>
+                        <div class="item">Vacunación y Desparasitación a Domicilio – Aplicación sin necesidad de
+                            traslado.</div>
                     </label>
 
-                
+
                 </div>
             </div>
 
@@ -376,10 +394,11 @@
                 <div class="logo-servicio" id="8"></div>
                 <div class="titulo-servicio">Servicios Especiales</div>
                 <div class="descripcion-servicio">
-                    
+
                     <label class="label">
                         <div class="viñeta"></div>
-                        <div class="item">Certificados de Salud y Viaje – Documentación para viajes nacionales e internacionales.</div>
+                        <div class="item">Certificados de Salud y Viaje – Documentación para viajes nacionales e
+                            internacionales.</div>
                     </label>
 
                     <label class="label">
@@ -400,18 +419,274 @@
             <div>
                 <div class="forma"></div>
             </div>
-    
+
             <div>
+                <div class="forma2"></div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="seccion4" id="seccion-nosotros">
+
+        <div class="titulo">Conoce a nuestro equipo experto</div>
+
+        <div id="seccion5">
+            <div>
+                <div class="galeria">
+                    <div class="item-galeria" id="galeria1" onclick="vistas(0)"></div>
+                    <div class="item-galeria" id="galeria2" onclick="vistas(1)"></div>
+                    <div class="item-galeria" id="galeria3" onclick="vistas(2)"></div>
+                    <div class="item-galeria" id="galeria4" onclick="vistas(3)"></div>
+                    <div class="item-galeria" id="galeria5" onclick="vistas(4)"></div>
+                </div>
+                <div class="forma2"></div>
+            </div>
+
+            <div>
+                <div class="vista">
+                    <div id="contenedor-perfil">
+                        <div id="datos-personales">
+                            <label class="titulo-perfil">Nombre:</label>
+                            <label class="info">Dr. Juan Carlos Rodríguez Pérez</label>
+                            <br>
+                            <label class="titulo-perfil">Especialidad:</label>
+                            <label class="info">Cardiologia</label>
+                            <br>
+                            <label class="titulo-perfil">Email:</label>
+                            <label class="info">juancarlosrp@patitasfelices.com</label>
+                            <br>
+                            <label class="titulo-perfil">Telefono:</label>
+                            <label class="info">+57 321 525 23 33</label>
+
+                        </div>
+                        <div>
+                            <img class="foto-perfil" src="" alt="">
+
+                        </div>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Perfil Profesional</h3>
+                        <p>Médico veterinario con más de 10 años de experiencia en el diagnóstico, tratamiento y
+                            prevención de
+                            enfermedades en animales domésticos y de producción. Especialista en cirugía veterinaria y
+                            manejo de
+                            emergencias clínicas. Apasionado por el bienestar animal y la investigación en salud
+                            veterinaria.</p>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Formacion Academica</h3>
+                        <ul>
+                            <li>Doctor en Medicina Veterinaria y Zootecnia – Universidad Nacional de Colombia
+                                (2008-2013)</li>
+                            <li>Especialización en Cirugía Veterinaria – Universidad de La Salle (2015-2016)</li>
+                            <li>Diplomado en Rehabilitación Animal y Fisioterapia – Universidad de Antioquia (2018)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vista">
+                    <div id="contenedor-perfil">
+                        <div id="datos-personales">
+                            <label class="titulo-perfil">Nombre:</label>
+                            <label class="info">Dra. Carolina Rojas Méndez</label>
+                            <br>
+                            <label class="titulo-perfil">Especialidad:</label>
+                            <label class="info">Dermatología y Nutrición Animal</label>
+                            <br>
+                            <label class="titulo-perfil">Email:</label>
+                            <label class="info">crojas@patitasfelices.com</label>
+                            <br>
+                            <label class="titulo-perfil">Telefono:</label>
+                            <label class="info">(+52) 55 2345 6789</label>
+
+                        </div>
+                        <div>
+                            <img class="foto-perfil" src="" alt="">
+
+                        </div>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Perfil Profesional</h3>
+                        <p>Médica veterinaria con más de 10 años de experiencia en el tratamiento de enfermedades
+                            dermatológicas y el desarrollo de planes nutricionales para animales de compañía.</p>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Formacion Academica</h3>
+                        <ul>
+                            <li>Licenciatura en Medicina Veterinaria y Zootecnia – UNAM (2007-2012)</li>
+                            <li>Especialización en Dermatología Veterinaria – Universidad de Buenos Aires (2014)</li>
+                            <li>Diplomado en Nutrición Animal – Universidad Autónoma de Barcelona (2016)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vista">
+                    <div id="contenedor-perfil">
+                        <div id="datos-personales">
+                            <label class="titulo-perfil">Nombre:</label>
+                            <label class="info">Dr. Alejandro Gómez Suárez</label>
+                            <br>
+                            <label class="titulo-perfil">Especialidad:</label>
+                            <label class="info">Cirugía y Ortopedia Animal</label>
+                            <br>
+                            <label class="titulo-perfil">Email:</label>
+                            <label class="info">agomez@patitasfelices.com</label>
+                            <br>
+                            <label class="titulo-perfil">Telefono:</label>
+                            <label class="info">(+57) 320 567 8901</label>
+
+                        </div>
+                        <div>
+                            <img class="foto-perfil" src="" alt="">
+
+                        </div>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Perfil Profesional</h3>
+                        <p>Veterinario con más de 12 años de experiencia en cirugía avanzada en pequeñas especies y
+                            traumatología.</p>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Formacion Academica</h3>
+                        <ul>
+                            <li>Licenciatura en Medicina Veterinaria y Zootecnia – Universidad Nacional de Colombia
+                                (2006-2011)</li>
+                            <li>Especialización en Cirugía Veterinaria – Universidad de Buenos Aires (2014)</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vista">
+                    <div id="contenedor-perfil">
+                        <div id="datos-personales">
+                            <label class="titulo-perfil">Nombre:</label>
+                            <label class="info">Dra. Valeria Estrada Paredes</label>
+                            <br>
+                            <label class="titulo-perfil">Especialidad:</label>
+                            <label class="info">Fauna Silvestre y Conservación</label>
+                            <br>
+                            <label class="titulo-perfil">Email:</label>
+                            <label class="info">valeria.estrada@patitasfelices.com</label>
+                            <br>
+                            <label class="titulo-perfil">Telefono:</label>
+                            <label class="info">(+54) 11 6789 0123</label>
+
+                        </div>
+                        <div>
+                            <img class="foto-perfil" src="" alt="">
+
+                        </div>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Perfil Profesional</h3>
+                        <p>Veterinaria especialista en rescate, rehabilitación y conservación de fauna silvestre con más
+                            de 8 años de experiencia.</p>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Formacion Academica</h3>
+                        <ul>
+                            <li>Licenciatura en Medicina Veterinaria – Universidad de Buenos Aires (2008-2013)</li>
+                            <li>Maestría en Medicina de Fauna Silvestre – Universidad de Florida (2016-2018)</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vista">
+                    <div id="contenedor-perfil">
+                        <div id="datos-personales">
+                            <label class="titulo-perfil">Nombre:</label>
+                            <label class="info">Dr. Pelos </label>
+                            <br>
+                            <label class="titulo-perfil">Especialidad:</label>
+                            <label class="info">Abrazos y Narices Humedas</label>
+                            <br>
+                            <label class="titulo-perfil">Email:</label>
+                            <label class="info">Drpelos@patitasfelices.com</label>
+                            <br>
+                            <label class="titulo-perfil">Telefono:</label>
+                            <label class="info">No me gusta</label>
+
+                        </div>
+                        <div>
+                            <img class="foto-perfil" src="" alt="">
+
+                        </div>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Perfil Profesional</h3>
+                        <p>Veterinario especializado en brindar abrazos y tranquilidad a sus pacientes, con un enfoque
+                            amable y jugueton que aliviana el estres y mejora la comunicacion, sin mencionar sus dotes
+                            de traductor animal</p>
+                    </div>
+                    <div id="perfil-profesional">
+                        <h3>Formacion Academica</h3>
+                        <ul>
+                            <li>Maestria en Ciencias Comuniativas Universidad de mi Casita (2018 - 2020)</li>
+                            <li>Maestría en Medicina Felina – Universidad de Michigan (2016-2018)</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="forma3"></div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="seccion6" id="seccion-contacto">
+        <div class="titulo">¿Algo que Quieras Contarnos?</div>
+        <div class="conteiner">
+            <div class="conteiner2">
+    
+                <div class="conteiner3">
+                    <div class="contenedor-contacto">
+                        <div class="conteiner4">
+                            <h2>Linea Emergencias Medicas</h2>
+                            <label class="dato">604 564 82 73</label>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-contacto">
+                        <div class="conteiner4">
+                            <h2>Solicitud de Citas</h2>
+                            <label class="dato">604 564 82 74</label>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-contacto">
+                        <div class="conteiner4">
+                            <h2 for="">Linea para PQRS</h2>
+                            <label class="dato">604 564 82 75</label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="forma"></div>
+            </div>
+            <div class="contenedor-agente">
+                <img class="agente" src="assets/agente.png" alt="" srcset="">
                 <div class="forma2"></div>
             </div>
         </div>
     
     
-        
+    
     
     </section>
-    
+
 </body>
 
 <script src="javaScript/index.js"></script>
+
 </html>

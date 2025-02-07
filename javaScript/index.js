@@ -109,4 +109,182 @@ function icons() {
 }
 
 
+const galeria = [
+                "url(assets/galeria1.png)",
+                "url(assets/galeria2.png)",
+                "url(assets/galeria3.png)",
+                "url(assets/galeria4.png)",
+                "url(assets/galeria5.png)"
+
+]
+
+function imgGaleria() {
+  for (let index = 1; index < 6; index++) {
+    const element = document.getElementById("galeria"+index)
+    element.style.backgroundImage =  galeria[index-1]
+    
+  }
+  
+}
+
+const imagenPerfil = [
+  "assets/perfil1.png",
+  "assets/perfil2.png",
+  "assets/perfil3.png",
+  "assets/perfil4.png",
+  "assets/perfil5.png"
+]
+
+
+function fotoPerfil() {
+  const foto = document.querySelectorAll(".foto-perfil")
+
+  for (let index = 0; index < 5; index++) {
+    foto[index].src = imagenPerfil[index]
+  } 
+}
+
+
+function vistas(n) {
+  const vistas = document.querySelectorAll(".vista")
+
+  switch (n) {
+    case 0:
+      for (let index = 0; index < vistas.length; index++) {
+        vistas[index].style.display = "none";
+      }
+
+      vistas[n].style.display = "block";
+
+      break;
+
+    case 1:
+      for (let index = 0; index < vistas.length; index++) {
+        vistas[index].style.display = "none";
+      }
+
+      vistas[n].style.display = "block";
+
+      break;
+
+    case 2:
+      for (let index = 0; index < vistas.length; index++) {
+        vistas[index].style.display = "none";
+      }
+
+      vistas[n].style.display = "block";
+
+      break;
+
+    case 3:
+      for (let index = 0; index < vistas.length; index++) {
+        vistas[index].style.display = "none";
+      }
+
+      vistas[n].style.display = "block";
+
+      break;
+
+    case 4:
+      for (let index = 0; index < vistas.length; index++) {
+        vistas[index].style.display = "none";
+      }
+
+      vistas[n].style.display = "block";
+
+      break;
+
+    default:
+      vistas[0].style.display = "block";
+      break;
+  }
+  
+}
+
+
+//codigo para desplazamiento entre pagina con botones 207-240
+
+document.getElementById("boton-sedes").addEventListener("click", function() {
+  document.getElementById("seccion-sedes").scrollIntoView({ 
+      behavior: "smooth", 
+      block: "center"
+  });
+});
+
+document.getElementById("boton-inicio").addEventListener("click", function() {
+  document.getElementById("seccion-inicio").scrollIntoView({ 
+      behavior: "smooth", 
+      block: "center"
+  });
+});
+
+document.getElementById("boton-servicios").addEventListener("click", function() {
+  document.getElementById("seccion-servicios").scrollIntoView({ 
+      behavior: "smooth", 
+      block: "center"
+  });
+});
+
+document.getElementById("boton-nosotros").addEventListener("click", function() {
+  document.getElementById("seccion-nosotros").scrollIntoView({ 
+      behavior: "smooth", 
+      block: "center"
+  });
+});
+
+document.getElementById("boton-contacto").addEventListener("click", function() {
+  document.getElementById("seccion-contacto").scrollIntoView({ 
+      behavior: "smooth", 
+      block: "center"
+  });
+});
+
+
+
+
+
+
+function desplazamientoBtn(n) {
+  switch (n) {
+    case 1:
+      document.getElementById("seccion-nosotros").scrollIntoView({ 
+        behavior: "smooth", 
+        block: "center"
+    });
+      break;
+
+      case 2:
+      document.getElementById("seccion-servicios").scrollIntoView({ 
+        behavior: "smooth", 
+        block: "center"
+    });
+      break;
+
+      case 3:
+      document.getElementById("seccion-sedes").scrollIntoView({ 
+        behavior: "smooth", 
+        block: "center"
+    });
+      break;
+
+      case 4:
+      document.getElementById("seccion-contacto").scrollIntoView({ 
+        behavior: "smooth", 
+        block: "center"
+    });
+      break;
+  
+    
+  }
+  
+}
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', icons());
+document.addEventListener('DOMContentLoaded', imgGaleria());
+document.addEventListener('DOMContentLoaded', fotoPerfil());
+document.addEventListener('DOMContentLoaded', vistas());
