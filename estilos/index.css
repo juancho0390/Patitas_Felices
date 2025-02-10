@@ -594,7 +594,7 @@ h2 {
     }
 
     .seccion3 {
-        display: none;
+        
     }
 
     .seccion4 {
@@ -672,6 +672,15 @@ h2 {
 
     .contenedor-der {
         width: 100%;
+    }
+
+    .contenedor-tarjetas {
+        display: flex;
+        flex-direction: column;
+        transform: none;
+        height: auto;
+        position: inherit;
+        transform: translateY(850px);
     }
 
 
