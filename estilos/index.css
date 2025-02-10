@@ -594,6 +594,15 @@ h2 {
     }
 
     .seccion3 {
+
+        display: flex;
+        flex-direction: column;
+        max-height: unset;
+        height: auto;
+
+
+        
+        
         
     }
 
@@ -674,14 +683,22 @@ h2 {
         width: 100%;
     }
 
+    .tarjeta {
+        height: auto;
+    }
+
     .contenedor-tarjetas {
         display: flex;
         flex-direction: column;
-        transform: none;
-        height: auto;
-        position: inherit;
-        transform: translateY(850px);
+        position: relative;
+        background: linear-gradient(135deg, #ff9a9e, aqua);
+        border-radius: 15px;
+        padding: 5%;
+        
     }
+
+
+    
 
 
 }
