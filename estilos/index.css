@@ -573,7 +573,7 @@ h2 {
 @media (max-width: 768px) {
     body {
         margin: 0;
-        padding: 0;
+        padding: 15px;
     }
 
     .seccion1 {
@@ -589,7 +589,8 @@ h2 {
     
 
     .seccion2 {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .seccion3 {
@@ -645,6 +646,32 @@ h2 {
         font-size: 3vw;
         margin: 0;
         
+    }
+
+    .sedes {
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    menu {
+        background: linear-gradient(45deg, #ff9a9e, aqua);
+        padding: 10px;
+        border-radius: 15px;
+       
+    }
+
+    .forma4, .forma3 {
+        display: none;
+    }
+
+    .mapa {
+        position: relative;
+        width: 100%;
+        transform: none;
+    }
+
+    .contenedor-der {
+        width: 100%;
     }
 
 
