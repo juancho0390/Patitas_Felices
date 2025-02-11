@@ -615,8 +615,10 @@ h2 {
     }
 
     .seccion6 {
-        display: none;
-        height: auto;
+        max-height: unset;
+        height: 100%;
+        transform: translateY(350px);
+        margin: 10% 0 10% 0;
         
     }
 
